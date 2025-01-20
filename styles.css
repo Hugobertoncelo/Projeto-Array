@@ -19,6 +19,10 @@ body {
   gap: 20px;
 }
 
+span {
+  color: #ff0000;
+}
+
 button {
   appearance: none;
   background-color: #79cb15;
@@ -29,7 +33,7 @@ button {
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
+
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: -.24px;
@@ -42,7 +46,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 210px;
+  width: 240px;
   
 }
 
@@ -56,11 +60,12 @@ button:active {
   transform: scale(1.025);
 }
 
-@media (min-width: 700px) {
-  button {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
+@media (max-width: 700px) {
+  .container-buttons {
+    grid-template-columns: 15rem 9rem;
+    display: grid;
   }
+
 } 
 
 ul {

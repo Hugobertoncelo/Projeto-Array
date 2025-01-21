@@ -59,6 +59,14 @@ button:hover {
 button:active {
   transform: scale(1.025);
 }
+.burguer {
+  position: fixed;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 0.3;
+  width: 100%;
+  height: 120vh;
+}
 
 ul {
   margin: 0 auto;
@@ -118,5 +126,10 @@ p {
 
   ul {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .burguer {
+    width: 100%;
+    height: 100%;
   }
 }
